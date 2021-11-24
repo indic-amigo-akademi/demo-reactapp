@@ -1,10 +1,44 @@
 {
-  "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
-  },
-  "devDependencies": {
-    "snowpack": "^3.3.7"
-  }
+    "name": "demo-reactapp",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build",
+        "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.4",
+        "@babel/preset-react": "^7.16.0",
+        "@snowpack/plugin-babel": "^2.1.7",
+        "@snowpack/plugin-react-refresh": "^2.5.0",
+        "snowpack": "^3.3.7"
+    },
+    "dependencies": {
+        "history": "^5.1.0",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "homepage": "https://indic-amigo-akademi.github.io/demo-reactapp",
+    "description": "An Repository to test react app functionalities from scratch.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/indic-amigo-akademi/demo-reactapp.git"
+    },
+    "keywords": [
+        "React"
+    ],
+    "author": "Purbayan Chowdhury",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/indic-amigo-akademi/demo-reactapp/issues"
+    }
 }
